@@ -3,15 +3,109 @@
 /* *********************************** */
 
 /* Tipografía */
-@font-face {
-    font-family: "";
-    src: url("") format("woof2"),
-         url("") format("woof");
+
+html{
+    font-family: Arial, sans-serif;
 }
 
 /* ******************************** */
 
-/* Colores */
+/* varibles Colores */
+:root{
+    --color-fondo: #022620;
+    --color-subtitulo:#F24B6A;
+    --color-nombre:#F5B6C2;
+    --color-cuadrado:#D9C6BA;
+    --color-parrafo:#FFFFFF;
+    /* variable tipografia */
+
+    --font-cesta:font-family: 'Rouge Script', cursive;;
+    
+
+}
+    
 
 /* ******************************** */
 
+body{
+    width: 1440px;
+    height: 1140px;
+    background-color:var(--color-fondo);
+}
+
+
+.main{
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 400px 250px 300px 200px 100px;
+    
+    
+    justify-items: center;
+
+    align-items: center;
+    
+
+}
+.main__titulo{
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+    align-self: center;
+    justify-self: center;
+    
+
+    height: 75px;
+    width: 557px;
+    left: 441px;
+    top: 458px;
+    font-family: Rouge Script;
+
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: 75px;
+
+
+    
+
+
+   
+
+}
+.main__subtitulo{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    height: 172px;
+    left: 216px;
+    top: 496px;
+    
+    font-size: 122px;
+    line-height: 172px;
+    color: var(--color-subtitulo);
+    
+} 
+
+.main__nombre{
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+font-size: 96px;
+font-weight: 900;
+color: var(--color-nombre);
+padding: 70px 0 0 0;
+
+
+}
+.main__parrafo{
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+    height: 87px;
+    width: 542px;
+    font-weight: 700px; 
+    font-size: 16px;
+    background-color: var(--color-cuadrado);
+    padding: 20px;
+    color: var(--color-parrafo);
+    border-radius: 10px;
+}
